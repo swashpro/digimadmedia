@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!--Begin head-->
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, user-scalable=no" name="viewport">
+  <!--Begin page title-->
+
+  <title>MODERN GREEN</title><!--End page title-->
+  <!--Begin style sheets-->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet">
+  <link href="css/slider.css" rel="stylesheet"><!--End style sheets-->
+  <!--Begin google fonts links-->
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel=
+  'stylesheet' type='text/css'>
+  <link href=
+  'http://fonts.googleapis.com/css?family=Roboto:400,100,300,500italic,300italic,100italic,500,700,400italic,700italic,900,900italic'
+  rel='stylesheet' type='text/css'><!--End google fonts links-->
+</head><!--End head-->
+<!--Begin Body-->
+
+<body>
+  <div class="head--wrap clearfix">
+    <!--Begin main logo-->
+
+    <div class="logo">
+      <!--Begin insert edited logo here-->
+      <a href="index.html"><img alt="web-template-image-logo" src=
+      "img/logo.png"></a><!-- End -->
+    </div><!--End main logo-->
+    <!--Begin Social media icons-->
+
+    <div class="social--media--wrap">
+      <div class="social--media">
+        <ul>
+          <li>
+            <!--Facebook icon image-->
+            <a href="#"><img alt="web-template-image-facebook" src=
+            "img/facebook.png"></a>
+          </li>
+
+          <li>
+            <!--Twitter icon image-->
+            <a href="#"><img alt="web-template-image-twitter" src=
+            "img/twitter.png"></a>
+          </li>
+
+          <li>
+            <!--Linkdin icon image-->
+            <a href="#"><img alt="web-template-image-linkdin" src=
+            "img/linkdin.png"></a>
+          </li>
+
+          <li>
+            <!--Pinterest icon image-->
+            <a href="#"><img alt="web-template-image-pinterest"
+            src="img/pinterest.png"></a>
+          </li><!--Youtube icon image-->
+
+          <li>
+            <a href="#"><img alt="web-template-image-youtube" src=
+            "img/youtube.png"></a>
+          </li>
+
+          <li>
+            <!--Tumblr icon image-->
+            <a href="#"><img alt="web-template-image-Tumblr" src=
+            "img/tumblr.png"></a>
+          </li>
+        </ul>
+      </div>
+    </div><!--End Social media icons-->
+    <!--Begin navigation-->
+
+    <nav>
+      <!--Begin Mobile navigation-->
+      <a class="mobile-menu" href="#" id="touch-menu"><i class=
+      "icon-reorder"></i>Menu</a> <!--End mobile navigation-->
+
+      <ul class="menu">
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+
+        <li>
+          <a href="page-example.html">PAGE EXAMPLE</a>
+        </li>
+
+        <li>
+          <a href="#">GALLERY</a>
+
+          <ul class="sub-menu">
+            <li>
+              <a href="#">BOX GALLERIES</a>
+
+              <ul class="submenu">
+                <li>
+                  <a href="small-gallery.html">SMALL
+                  GALLERY</a>
+                </li>
+
+                <li>
+                  <a href="medium-gallery.html">MEDIUM
+                  GALLERY</a>
+                </li>
+
+                <li>
+                  <a href="large-gallery.html">LARGE
+                  GALLERY</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="slider-gallery.html">SLIDE GALLERY</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="blog.html">BLOG</a>
+        </li>
+
+        <li>
+          <a href="contact.html">CONTACT</a>
+        </li>
+      </ul>
+    </nav><!--End Navigation-->
+  </div><!--End header wrapper-->
+  <!--Start main wrapper-->
+
+  <div class="main--wrap clearfix">
+    <div id="mainform">
+      <h2>Please feel free to use the contact form below to contact
+      us!</h2><!--Start contact form-->
+
+      <form id="form" name="form">
+        <!--Start contact form heading-->
+
+        <h3>Contact Form</h3><!--End contact form heading-->
+        <!--Start contact form name-->
+
+        <p id="returnmessage"></p><label>Name: <span>*</span></label>
+        <input id="name" placeholder="Name" type="text"> 
+        <!--End contact form name-->
+         <!--Start contact form email-->
+         <label>Email:<span>*</span></label> <input id="email"
+        placeholder="Email" type="text"> <!--End contact form email-->
+         <!--Begin contact form contact number-->
+         <label>Contact No: <span>*</span></label> <input id="contact"
+        placeholder="Phone number" type="text"> 
+        <!--End contact form contact number-->
+         <!--Start contact form message-->
+         <label>Message:</label> 
+        <textarea id="message" placeholder="Message...">
+ 
+       </textarea>
+       <!--End contact form message-->
+
+       <!--Start contact form submit button-->
+       <input id="submit" type="button" value="Send Message">
+        </form><!--End contact form-->
+      <!--Start google maps-->
+      <iframe src=
+      "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9119682.944654657!2d19.408238699999977!3d56.07952219479286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1410828365178"
+      style="border:0"></iframe> <!--End google maps-->
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div><!--End footer wrapper-->
+  <!--End main wrapper--><script src=
+  "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <script type="text/javascript">
+
+
+  $(document).ready(function() {
+  $("#submit").click(function() {
+  var name = $("#name").val();
+  var email = $("#email").val();
+  var contact = $("#contact").val();
+  var message = $("#message").val();
+
+  $("#returnmessage").empty(); // To empty previous error/success message.
+  // Checking for blank fields.
+  if (name == '' || email == '' || contact == '') {
+  alert("Please Fill Required Fields");
+  } else {
+  // Returns successful data submission message when the entered information is stored in database.
+  $.post("contact_form.php", {
+  name1: name,
+  email1: email,
+  message1: message,
+  contact1: contact
+  }, function(data) {
+  $("#returnmessage").append(data); // Append returned message to message paragraph.
+  if (data == "Your Query has been received, We will contact you soon.") {
+  $("#form")[0].reset(); // To reset form fields on success.
+  }
+  });
+  }
+  });
+  });
+
+
+  </script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+  
+</body>
+</html>
